@@ -23,8 +23,11 @@ type CreateUserRp struct {
 }
 
 // Get user
-type GetUserRq struct {
-	UserID int64 `json:"ti"`
+type GetUserByTelegramIDRq struct {
+	TelegramID int64 `json:"ti"`
+}
+type GetUserByIDRq struct {
+	UserID int64 `json:"ui"`
 }
 type GetUserRp struct {
 	TelegramID int64  `json:"i"`
