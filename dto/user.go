@@ -7,6 +7,7 @@ type CreateUserRq struct {
 	TelegramID    int64  `json:"ti"`
 	ReferalUserID int64  `json:"ref"`
 	Username      string `json:"un"`
+	AvatarLink    string `json:"al"`
 	Language      string `json:"lg"`
 }
 type CreateUserRp struct {
