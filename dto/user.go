@@ -4,22 +4,13 @@ import "time"
 
 // Create user
 type CreateUserRq struct {
-	UserID        int64  `json:"ti"`
+	TelegramID    int64  `json:"ti"`
 	ReferalUserID int64  `json:"ref"`
 	Username      string `json:"un"`
 	Language      string `json:"lg"`
 }
 type CreateUserRp struct {
-	TelegramID int64  `json:"i"`
-	Username   string `json:"u"`
-	AvatarLink string `json:"a"`
-
-	Balance      *int64 `json:"b"`
-	EulaAccepted *bool  `json:"e"`
-	Rating       int64  `json:"r"`
-
-	CachedFriends *int       `json:"c"`
-	LastLogin     *time.Time `json:"l"`
+	UserId int64 `json:"ui"`
 }
 
 // Get user
